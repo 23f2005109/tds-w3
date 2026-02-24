@@ -1,8 +1,11 @@
 name: Daily Commit
 
+permissions:
+  contents: write
+
 on:
   schedule:
-    - cron: '30 3 * * *'  # runs daily at 03:30 UTC
+    - cron: '30 3 * * *'
   workflow_dispatch:
 
 jobs:
